@@ -3,10 +3,10 @@ services:
   postgresql:
     image: postgres:latest
     ports:
-      - '5432:5432'
+      - '5454:5454'
     volumes:
       - ./data:/var/lib/postgres
     environment:
-      - POSTGRES_DB=db
+      - POSTGRES_DB=base
       - POSTGRES_USER=app
       - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
